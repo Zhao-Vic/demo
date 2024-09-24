@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Google Image Search</title>  
+    <style>  
+        /* 简单的样式，确保链接在右上角 */  
+        .nav-links {  
+            position: absolute;  
+            top: 10px;  
+            right: 10px;  
+        }  
+        .nav-links a {  
+            margin-left: 10px;  
+            text-decoration: none;  
+            color: blue;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="nav-links">  
+        <a href="index.html">Back to Google Search</a>  
+    </div>  
+    <h1>Google Image Search</h1>  
+    <form action="https://www.google.com/search" method="get" target="_blank">  
+        <input type="hidden" name="tbm" value="isch"> <!-- 设置为图像搜索 -->  
+        <input type="text" name="q" placeholder="Search Google Images...">  
+        <input type="submit" value="Google Image Search">  
+    </form>  
+</body>  
+</html>
